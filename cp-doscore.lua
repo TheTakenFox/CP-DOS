@@ -48,7 +48,7 @@ print("MemUtility 2.0 By CastleMan2000")
 sleep(0.5)
 print("More programs will be inclued soon!")
 sleep(0.5)
-print("Type in adpro for an Advanced Program List")
+print("Type in advpro for an Advanced Program List")
 sleep(0.5)
 end
 Boot()
