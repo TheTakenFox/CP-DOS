@@ -50,4 +50,5 @@ print("Type advown for all the names of the creators from the apps")
 sleep(0.5)
 end
 
+update()
 Boot()
