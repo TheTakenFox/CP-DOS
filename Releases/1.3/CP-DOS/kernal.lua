@@ -1,4 +1,4 @@
-os.loadAPI('/gui')
+os.loadAPI('cp-dos/apis/gui')
 local function getFreeMem()
   local bytesFree = fs.getFreeSpace("/")
   local kbFree = math.ceil(bytesFree / 1024)
