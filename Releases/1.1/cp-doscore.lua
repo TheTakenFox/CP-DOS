@@ -1,46 +1,4 @@
 
-local function dofile (filename) -- we need this later.
-          local f = assert(loadfile(filename))
-          return f()
-        end
-local function get(paste) -- This function is from pastebin program.
-        local response = http.get(
-                "http://pastebin.com/raw.php?i=0UnwMYY4"..textutils.urlEncode( paste )
-        )
-          
-        if response then
-                --print( "Success." )
-          
-                local sResponse = response.readAll()
-                response.close()
-                return sResponse
-        else
-                print( "Update failed." )
-        end
-end
-local version = "1.1" -- Put the version in here.
-local pastetoget = "0UnwMYY4" -- Enter your paste
-local dataweneed = get(pastetoget)
-if string.find( dataweneed, 'local version = "'..version..'"' ) then -- This if part can be commented out if you want to disable UPDATES on your own computer.
--- if you are coding it in-game etc.
-
-
-
-
--- If this happens, our program found a different version on pastebin
-local handsofthedead = fs.open(".updatedprog","w")
-handsofthedead.write(dataweneed)
-handsofthedead.close()
-fs.move(shell.getRunningProgram(),"noneedanymore")
-fs.move(".updatedprog",shell.getRunningProgram() )
-fs.delete("noneedanymore")
--- Process ends after here. Update done. TADAA.
--- We should add some kind of thing so user knows wtf happened
-print("The program updated.")
-dofile(shell.getRunningProgram())
-return
-end
-
 local function getFreeMem()
   local bytesFree = fs.getFreeSpace("/")
   local kbFree = math.ceil(bytesFree / 1024)
