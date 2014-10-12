@@ -43,7 +43,7 @@ getFreeMem()
 sleep(0.5)
 button = gui.createButton(  "Start", function() secboot() end ) --#This creates a new button with a function that when triggered will print "Hello World!"
 
-button:draw( 1,1 5, colors.green, colors.white ) -- #This draws the button at (1,1) with a width of 5. The first color is what the buttons color will be and the second color is the text color
+button:draw(1,1 5, colors.green, colors.white) -- #This draws the button at (1,1) with a width of 5. The first color is what the buttons color will be and the second color is the text color
 
 button:toggle( colors.red,4) --#This toggles the buttons color to red for 4 seconds (If you leave the second argument as nil it will just toggle the button)
 
