@@ -31,9 +31,7 @@ updater.update(update, "Cloudpaw", "CP-DOS") -- first argument is the function t
 local function Boot()
 term.clear()
 bar = gui.createBar( "bar" ) --#This creates a new bar with the name
-
 bar:draw( 5,8,30,colors.white,colors.green,true,colors.black,colors.white ) --#This draws the bar at (5,8) with a length of 30. The first color is the bar color, the second color is the progress color, the next argument is whether or not to display the percent, the third color is the text background color (for displaying the percent) and the fifth is the percent text color.
-
 bar:update( percent ) --#Re-draws the bar with the new percent
 term.clear()
 sleep(0.5)
@@ -44,9 +42,7 @@ sleep(0.5)
 button = gui.createButton(  "Start", function() secboot() end ) --#This creates a new button with a function that when triggered will print "Hello World!"
 
 button:draw(1,1 5, colors.green, colors.white) -- #This draws the button at (1,1) with a width of 5. The first color is what the buttons color will be and the second color is the text color
-
-button:toggle( colors.red,4) --#This toggles the buttons color to red for 4 seconds (If you leave the second argument as nil it will just toggle the button)
-
+button:toggle(colors.red,4) --#This toggles the buttons color to red for 4 seconds (If you leave the second argument as nil it will just toggle the button)
 button:trigger() --#This triggers the buttons function
 
 gui.detect( 1,3,true ) --#this checks an array of all the buttons you've defined and returns the name of the button. If you also set the third argument to true it will trigger that buttons action
