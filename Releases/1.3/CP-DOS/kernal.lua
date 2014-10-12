@@ -35,7 +35,7 @@ bar:draw( 5,8,30,colors.white,colors.green,true,colors.black,colors.white ) --#T
 bar:update( percent ) --#Re-draws the bar with the new percent
 term.clear()
 sleep(0.5)
-print("CP-DOS 1.2")
+print("CP-DOS 1.3")
 sleep(0.5)
 getFreeMem()
 sleep(0.5)
@@ -57,5 +57,5 @@ sleep(0.5)
 end
 end
 end
-end
+endof
 Boot()
