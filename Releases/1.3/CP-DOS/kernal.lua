@@ -20,13 +20,6 @@ sleep(0.5)
 sleep(0.5)
 end
  
- local updater = dofile("lib/updater.lua")
-         local function update()
-print("Update Found!")
-end
-updater.new() -- this will check for any updates for the updater
-updater.update(update, "Cloudpaw", "CP-DOS") -- first argument is the function to be executed in case of an update second is the username and last is the repostery where the program is located
-end
 
 local function Boot()
 term.clear()
@@ -50,5 +43,4 @@ print("Type advown for all the names of the creators from the apps")
 sleep(0.5)
 end
 
-update()
 Boot()
