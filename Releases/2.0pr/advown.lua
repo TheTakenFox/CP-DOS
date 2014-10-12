@@ -1,3 +1,4 @@
+term.clear()
 print("Kernal =Cloudpaw=")
 print("Advanced programs =Cloudpaw=")
 print("MemUtility2.0 =CastleMan2000=")
