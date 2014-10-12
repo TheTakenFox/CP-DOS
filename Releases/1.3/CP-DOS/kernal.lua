@@ -38,13 +38,7 @@ print("CP-DOS 1.3")
 sleep(0.5)
 getFreeMem()
 sleep(0.5)
-FileDialogueBox = gui.createDialogueBox("OS", {"Do you want to", "check for an update?"}, "y/n")
-
-function skipFileCheck()
-  FileDialogueBox:draw( 20,5,7,colors.gray,colors.lightBlue,colors.black)
-  if FileDialogueBox == true then
-   update()
-  elseif FileDialogueBox == false then
+update()
 textutils.slowPrint("Terminal mode is active!")
 sleep(0.5)
 print("THIS OS IN ALPHA IT STILL USES CRAFTOS FOR IT'S BASE!")
