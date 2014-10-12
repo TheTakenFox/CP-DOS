@@ -24,7 +24,7 @@ end
 local function Boot()
 term.clear()
 bar = gui.createBar("bar") --#This creates a new bar with the name
-bar:draw(5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,colors.white,colors.green,true,colors.black,colors.white) --#This draws the bar at (5,8) with a length of 30. The first color is the bar color, the second color is the progress color, the next argument is whether or not to display the percent, the third color is the text background color (for displaying the percent) and the fifth is the percent text color.
+bar:draw(5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,colors.white,colors.green,true,colors.black,colors.white) --#This draws the bar at (5,8) with a length of 30. The first color is the bar color, the second color is the progress color, the next argument is whether or not to display the percent, the third color is the text background color (for displaying the percent) and the fifth is the percent text color.
 bar:update(percent) --#Re-draws the bar with the new percent
 term.clear()
 sleep(0.5)
